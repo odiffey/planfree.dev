@@ -256,7 +256,7 @@ export default class Game extends Vue {
     }
 
     .voted {
-      background: #54e8dd;
+      background: var(--primary-color);
     }
   }
 
@@ -399,7 +399,7 @@ export default class Game extends Vue {
 
 
   .copied {
-    background:#54e8dd;
+    background:var(--primary-color);
   }
 
   .no-hover {
@@ -425,7 +425,7 @@ export default class Game extends Vue {
     width: 90%;
     bottom: 5%;
     font-size: 20px;
-    color: #54e8dd;
+    color: var(--primary-color);
 
     .results {
       display: flex;

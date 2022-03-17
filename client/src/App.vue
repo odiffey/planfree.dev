@@ -1,9 +1,20 @@
 <template>
-  <div id="app">
+  <div id="app" :style="`--primary-color: ${primaryColor}`">
     <title>Planning Poker</title>
     <router-view/>
   </div>
 </template>
+
+<script lang="ts">
+import { Component, Vue } from "vue-property-decorator";
+
+@Component({
+  components: {},
+})
+export default class App extends Vue {
+  public primaryColor = process.env.VUE_APP_PRIMARY_COLOR || '#54e8dd';
+}
+</script>
 
 <style lang="scss">
 
