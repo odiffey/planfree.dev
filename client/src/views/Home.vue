@@ -171,7 +171,7 @@ export default class Home extends Vue {
     user-select: none;
     font-size: 3.2em;
     span {
-      color: #54e8dd;
+      color: var(--primary-color);
       background: black;
       border-radius: 10px;
       width: 7rem;
@@ -241,7 +241,7 @@ export default class Home extends Vue {
 }
 
 svg rect {
-  fill: #54e8dd;
+  fill: var(--primary-color);
 }
 
 
