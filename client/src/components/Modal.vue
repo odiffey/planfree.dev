@@ -61,7 +61,7 @@ export default class Modal extends Vue {
     }
 
     .enter-button {
-      background: #54e8dd;
+      background: var(--primary-color);
       border:none;
       cursor: pointer;    
       border-top-right-radius: 10px;
