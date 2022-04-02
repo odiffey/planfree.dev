@@ -492,7 +492,7 @@ export default class Game extends Vue {
         }
       }
       &.current {
-        background: #54e8dd;
+        background: var(--primary-color);
       }
     }
 
