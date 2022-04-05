@@ -33,7 +33,7 @@
 
       <div class="options" v-if="!showVotes || showVotes && countdown != 0">
         <button
-          v-for="vote in [0, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, '?']"
+          v-for="vote in ['0', '1', '2', '3', '5', '8', '13', '21', '34', '55', '89', '?']"
           :key="`vote-${vote}`"
           class="fib-button"
           :class="{current: currentVote === vote}"
@@ -75,7 +75,7 @@ export default class Game extends Vue {
   public countdown = 0;
   public interval: any = {};
   public name = "";
-  public currentVote = null;
+  public currentVote: any = null;
 
   public mounted() {
     if (this.joiningAGame()) {
